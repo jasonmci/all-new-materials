@@ -1,0 +1,21 @@
+All New Materials
+
+Minimum Marketing Feature
+* linting
+- continuous integration
+- gauge
+
+
+User Stories:
+- linting
+- unit testing custom code
+
+
+Engineering Tasks:
+- automated build
+- continous integration
+- 
+
+Subtasks:
+- install jake
+- configure the default task
