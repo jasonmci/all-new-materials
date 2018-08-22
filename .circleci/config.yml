@@ -17,8 +17,8 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - git clone https://github.com/jasonmci/all-new-materials.git
-
+      - checkout
+      
       # Download and cache dependencies
       # - restore_cache:
       #    keys:
