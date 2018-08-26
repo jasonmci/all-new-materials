@@ -25,3 +25,9 @@ Subtasks:
       rigorous approach
 - assure we cannot merge to master until those tests pass. 
 - how can we run tests on the branch prior to pulling. 
+
+Chapter 5
+- how to guarantee a good integration build
+- modified to use circle ci to verify automatically
+  instead of going to another box, circleci is the other box
+  
