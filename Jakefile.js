@@ -12,7 +12,7 @@ task("lint", [], function() {
     files.exclude("node_modules");
 
     var passed = lint.validateFileList(files.toArray(), nodeLintOptions(), {});
-    if (!passed) fail("Lint failed")
+    if (!passed) fail("Lint failed");
 });
 
 desc("integrate");
