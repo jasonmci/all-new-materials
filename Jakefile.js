@@ -2,7 +2,7 @@
 "use strict";
 
 desc("Build and Test");
-task("default", ["lint", "mergeToIntegration"]);
+task("default", ["lint"]);
 
 desc("Lint all the things");
 task("lint", [], function() {
