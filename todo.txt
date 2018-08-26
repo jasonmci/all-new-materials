@@ -19,3 +19,9 @@ Engineering Tasks:
 Subtasks:
 - install jake
 - configure the default task
+- install a docker container that is the same as circle ci. 
+    - docker pull circleci/node 
+    - although we can use circle ci to build, there is a lot to learn from the
+      rigorous approach
+- assure we cannot merge to master until those tests pass. 
+- how can we run tests on the branch prior to pulling. 
