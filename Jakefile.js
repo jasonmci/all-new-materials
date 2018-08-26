@@ -22,7 +22,7 @@ task("mergeToIntegration", [], function() {
     console.log("2. git merge master --no-ff --log");
     console.log("3. git checkout master");
     var cmds = [
-        'git fetch origin',
+        'git branch integration',
         'git checkout integration',
         'git merge master --no-ff --log',
         'git checkout master'
