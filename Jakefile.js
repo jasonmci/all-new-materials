@@ -11,7 +11,8 @@ task("lint", [], function() {
     files.include("**/*.js");
     files.exclude("node_modules");
 
-    lint.validateFileList(files.toArray(), nodeLintOptions(), {}) || fail("Lint failed");
+    var passed = lint.validateFileList(files.toArray(), nodeLintOptions(), {});
+    if (!passed) fail("Lint failed")
 });
 
 desc("integrate");
