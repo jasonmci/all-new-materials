@@ -2,7 +2,7 @@
 "use strict";
 
 desc("Build and Test");
-task("default", ["lint"]);
+task("default", ["lint", "mergeToIntegration"]);
 
 desc("Lint all the things");
 task("lint", [], function() {
@@ -22,6 +22,7 @@ task("mergeToIntegration", [], function() {
     console.log("2. git merge master --no-ff --log");
     console.log("3. git checkout master");
     var cmds = [
+        'git fetch origin',
         'git checkout integration',
         'git merge master --no-ff --log',
         'git checkout master'
