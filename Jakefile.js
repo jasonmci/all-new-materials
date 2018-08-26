@@ -2,7 +2,7 @@
 "use strict";
 
 desc("Build and Test");
-task("default", ["lint", "mergeToIntegration"]);
+task("default", ["lint"]);
 
 desc("Lint all the things");
 task("lint", [], function() {
@@ -22,7 +22,6 @@ task("mergeToIntegration", [], function() {
     console.log("2. git merge master --no-ff --log");
     console.log("3. git checkout master");
     var cmds = [
-        'git branch integration',
         'git checkout integration',
         'git merge master --no-ff --log',
         'git checkout master'
@@ -41,9 +40,7 @@ task("integrate", ["default"], function() {
     console.log("   b. 'git pull'");
     console.log("   c 'jake'");
     console.log("   d. If jake fails, stop and start over.");
-    console.log("3. 'git checkout integration");
-    console.log("4. 'git merge master --no-ff --log");
-    console.log("5. 'git checkout master");
+    console.log("3. 'Run 'jake mergeToIntegration'");
 });
 
 function nodeLintOptions() {
