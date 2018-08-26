@@ -2,7 +2,7 @@
 "use strict";
 
 desc("Build and Test");
-task("default", ["lint"]);
+task("default", ["lint", "mergeToIntegration"]);
 
 desc("Lint all the things");
 task("lint", [], function() {
@@ -13,6 +13,23 @@ task("lint", [], function() {
 
     var passed = lint.validateFileList(files.toArray(), nodeLintOptions(), {});
     if (!passed) fail("Lint failed");
+});
+
+desc("Merge known good to integration branch");
+task("mergeToIntegration", [], function() {
+    console.log("Now that everything has passed...");
+    console.log("1. git checkout integration");
+    console.log("2. git merge master --no-ff --log");
+    console.log("3. git checkout master");
+    var cmds = [
+        'git checkout integration',
+        'git merge master --no-ff --log',
+        'git checkout master'
+    ];
+    jake.exec(cmds, {printStdout: true}, function() {
+        console.log("All changes have been moved to the integration branch.");
+        complete();
+    });
 });
 
 desc("integrate");
