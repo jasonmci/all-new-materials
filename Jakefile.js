@@ -2,7 +2,7 @@
 "use strict";
 
 desc("Build and Test");
-task("default", ["lint"]);
+task("default", ["lint", "test"]);
 
 desc("Lint all the things");
 task("lint", [], function() {
@@ -43,6 +43,12 @@ task("integrate", ["default"], function() {
     console.log("   d. If jake fails, stop and start over.");
     console.log("3. 'Run 'jake mergeToIntegration'");
 });
+
+desc("Test Everything");
+task("test", [], function(){
+    console.log("Test goes here");
+});
+
 
 function nodeLintOptions() {
     return {
