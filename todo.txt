@@ -31,3 +31,12 @@ Chapter 5
 - modified to use circle ci to verify automatically
   instead of going to another box, circleci is the other box
   
+Frameworks:
+  * Home Grown RSpec
+  * Home Grown Nightwatch
+  * Gauge Ruby
+  * Gauge Javascript
+  * Mocha
+    * starting with mocha
+    * this is what james shore is working on
+    

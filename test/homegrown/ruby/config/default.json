@@ -1,0 +1,13 @@
+{
+    "fe_url"               : "https://www.phptravels.net/login",
+    "fe_username"          : "user@phptravels.com",
+    "fe_password"          : "demouser",
+
+    "be_admin_url"         : "https://www.phptravels.net/admin",
+    "be_admin_username"    : "admin@phptravels.com",
+    "be_admin_password"    : "demoadmin",
+
+    "be_supplier_url"      : "https://www.phptravels.net/supplier",
+    "be_supplier_username" : "supplier@phptravels.com",
+    "be_supplier_password" : "demosupplier"
+}
