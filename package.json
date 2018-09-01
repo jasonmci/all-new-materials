@@ -27,6 +27,7 @@
   "dependencies": {
     "jake": "^8.0.18",
     "jshint": "^2.9.6",
+    "nodeunit": "^0.11.3",
     "typescript": "^2.9.2"
   },
   "devDependencies": {
