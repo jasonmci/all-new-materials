@@ -1,1 +1,6 @@
-console.log("Hello, I am a server");
+// tdjs tutorials
+"use strict";
+
+exports.number = function() {
+    return 3;
+};
