@@ -1,5 +1,8 @@
 All New Materials
 
+Current Episode
+#9 
+
 Minimum Marketing Feature
 * linting
 - continuous integration
@@ -12,9 +15,9 @@ User Stories:
 
 
 Engineering Tasks:
-- automated build
-- continous integration
-- 
+- Create a very simple http server
+  - Use a framework like express. 
+  
 
 Subtasks:
 - install jake
