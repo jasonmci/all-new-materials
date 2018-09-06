@@ -1,4 +1,5 @@
 // spiking on an http server, bare bones
+"use strict";
 
 var http = require("http");
 
