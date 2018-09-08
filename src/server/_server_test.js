@@ -1,6 +1,8 @@
 // tdjs tutorials
 "use strict";
 
+var PORT = 8080;
+
 var server = require("./server.js");
 var http = require("http");
 
@@ -11,7 +13,7 @@ exports.tearDown = function(done) {
 };
 
 exports.test_ServerRespondsToGetRequest = function(test) {
-    server.start();
+    server.start(8080);
     http.get("http://localhost:8080", function(response) {
         response.on("data", function() {} );
         test.done();
@@ -19,7 +21,7 @@ exports.test_ServerRespondsToGetRequest = function(test) {
 };
 
 exports.test_ServerReturnsHelloWorld = function(test) {
-    server.start(); //TODO: Remove duplicate code
+    server.start(8080); //TODO: Remove duplicate code
     var request = http.get("http://localhost:8080");
     request.on("response", function (response) {
         var receivedData = false;

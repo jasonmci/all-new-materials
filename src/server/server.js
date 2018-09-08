@@ -4,12 +4,13 @@
 var http = require("http");
 var server; 
 
-exports.start = function() {
+exports.start = function(portNumber) {
+    // var portNumber = 8080;
     server = http.createServer();
     server.on("request", function(request, response) {
         response.end("Hello World");
     });
-    server.listen(8080); // TODO: remove duplication of the port number
+    server.listen(portNumber); // TODO: remove duplication of the port number
 };
 
 exports.stop = function(callback) {
