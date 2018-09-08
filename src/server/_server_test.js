@@ -6,10 +6,8 @@ var http = require("http");
 
 exports.tearDown = function(done) {
     server.stop(function() {
-        console.log("stop call back");
         done();
     });
-    console.log("tear down end");
 };
 
 exports.testHttpServerRespondsToGetRequest = function(test) {
