@@ -19,5 +19,4 @@ exports.testHttpServerRespondsToGetRequest = function(test) {
         response.on("data", function() {} );
         test.done();
     });
-
 };
