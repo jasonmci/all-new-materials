@@ -12,7 +12,7 @@ exports.tearDown = function(done) {
     console.log("tear down end");
 };
 
-exports.testHttpServer = function(test) {
+exports.testHttpServerRespondsToGetRequest = function(test) {
     server.start();
     http.get("http://localhost:8080", function(response) {
         server.stop();
