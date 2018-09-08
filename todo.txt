@@ -29,15 +29,10 @@ User Stories:
 
 
 Engineering Tasks:
-- Create a very simple http server
-  - Use a framework like express. 
-  - Update script to enforce version of node. 
-  - The test is not stopping; fix the test
+- Server should do more
 
 
 Subtasks:
-- install jake
-- configure the default task
 - install a docker container that is the same as circle ci. 
     - docker pull circleci/node 
     - although we can use circle ci to build, there is a lot to learn from the
