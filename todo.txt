@@ -1,7 +1,21 @@
 All New Materials
 
+To build:
+- Install Node.js 8.9.4
+- Install Git
+- Clone Repo
+- Run jake
+- 
+
+Continous integration
+- Circle CI runs tests
+
 Current Episode
-#9 
+#11 Lots of Learning
+#12 
+#13
+#14
+
 
 Minimum Marketing Feature
 * linting
@@ -17,7 +31,9 @@ User Stories:
 Engineering Tasks:
 - Create a very simple http server
   - Use a framework like express. 
-  
+  - Update script to enforce version of node. 
+  - The test is not stopping; fix the test
+
 
 Subtasks:
 - install jake
