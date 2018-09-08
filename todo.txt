@@ -5,32 +5,25 @@ To build:
 - Install Git
 - Clone Repo
 - Run jake
-- 
 
 Continous integration
 - Circle CI runs tests
 
-Current Episode
-#11 Lots of Learning
-#12 
-#13
-#14
-
-
-Minimum Marketing Feature
-* linting
-- continuous integration
-- gauge
-
-
 User Stories:
-- linting
-- unit testing custom code
-
+ - Enforce the node version
 
 Engineering Tasks:
-- Server should do more
+* Create a very simple HTTP server
 
+TODO on the Current Task:
+  - Modify build script to enforce Node version
+  - integrate
+  - when do we deliver continuously, or can i add that in?
+
+Future Ideas:
+- Create Fail Fast assertion code.
+  - Simian Army
+  - Chaos Monkey
 
 Subtasks:
 - install a docker container that is the same as circle ci. 

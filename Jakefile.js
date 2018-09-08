@@ -44,6 +44,21 @@ task("integrate", ["default"], function() {
     console.log("3. 'Run 'jake mergeToIntegration'");
 });
 
+function sh(command, callback) {
+    console.log("> " + command);
+    var stdout = "";
+    // this is what is called an event emitter 
+    var process = jake.createExec(command, { printStdout:true, printStderr: true});
+    process.on("stdout", function(chunk) {
+        stdout += chunk; 
+    });
+    process.on("cmdEnd", function(){
+        console.log();
+        callback(stdout);
+    });
+    process.run();
+}
+
 desc("Test Everything");
 task("test", [], function(){
     var reporter = require("nodeunit").reporters["default"];
